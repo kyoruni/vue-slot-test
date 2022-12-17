@@ -9,6 +9,7 @@ const props = defineProps({
 <template>
   <section class="section">
     <h2>{{ props.name }}さんのプロフィール</h2>
+    <slot/>
   </section>
 </template>
 
