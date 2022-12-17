@@ -5,6 +5,7 @@ import Section from '@/components/Section.vue';
 <template>
   <div id="app">
     <Section name="田中太郎">
+      <!-- default slot -->
       <template #default>
         <ul>
           <li>性別：男</li>
@@ -12,6 +13,7 @@ import Section from '@/components/Section.vue';
           <li>出身：神奈川県横浜市</li>
       </ul>
       </template>
+      <!-- detail slot -->
       <template #detail>
         <ul>
           <li>実家は秋田県らしい</li>
