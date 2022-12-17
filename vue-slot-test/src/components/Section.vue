@@ -9,7 +9,9 @@ const props = defineProps({
 <template>
   <section class="section">
     <h2>{{ props.name }}さんのプロフィール</h2>
-    <slot/>
+    <slot>
+      <p>まだプロフィールが記入されていません。</p>
+    </slot>
   </section>
 </template>
 

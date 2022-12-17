@@ -11,5 +11,7 @@ import Section from '@/components/Section.vue';
         <li>出身：神奈川県横浜市</li>
       </ul>
     </Section>
+    <Section name="山田花子">
+    </Section>
   </div>
 </template>
