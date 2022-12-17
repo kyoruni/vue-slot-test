@@ -12,6 +12,9 @@ const props = defineProps({
     <slot>
       <p>まだプロフィールが記入されていません。</p>
     </slot>
+    <slot name="detail">
+      <p>まだ詳細情報が記入されていません。</p>
+    </slot>
   </section>
 </template>
 
