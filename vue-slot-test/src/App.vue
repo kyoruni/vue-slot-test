@@ -21,10 +21,10 @@ import Section from '@/components/Section.vue';
         </ul>
       </template>
       <!-- スコープ付きslot -->
-      <template #scope="slotProps">
+      <template #scope="{familyInfo}">
         <ul>
-          <li>人数：{{ slotProps.familyInfo.num }}</li>
-          <li>メモ：{{ slotProps.familyInfo.memo }}</li>
+          <li>人数：{{ familyInfo.num }}</li>
+          <li>メモ：{{ familyInfo.memo }}</li>
         </ul>
       </template>
     </Section>
