@@ -20,6 +20,13 @@ import Section from '@/components/Section.vue';
           <li>趣味はバイク</li>
         </ul>
       </template>
+      <!-- スコープ付きslot -->
+      <template #scope="slotProps">
+        <ul>
+          <li>人数：{{ slotProps.familyInfo.num }}</li>
+          <li>メモ：{{ slotProps.familyInfo.memo }}</li>
+        </ul>
+      </template>
     </Section>
     <Section name="山田花子"/>
   </div>
