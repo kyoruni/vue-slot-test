@@ -27,8 +27,8 @@ const families = ["母：恵美子", "父：宗介", "妹：美香"];
     <slot name="scope" :familyInfo="familyInfo">
       <h4>家族構成</h4>
       <ul>
-        <li>人数：{{ familyInfo.num }}</li>
-        <li>メモ：{{ familyInfo.memo}}</li>
+        <li>num：{{ familyInfo.num }}</li>
+        <li>memo：{{ familyInfo.memo}}</li>
       </ul>
     </slot>
   </section>
@@ -36,6 +36,9 @@ const families = ["母：恵美子", "父：宗介", "妹：美香"];
 
 <style scoped>
 .section {
- border: solid 2px red;
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 </style>
