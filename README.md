@@ -1,40 +1,23 @@
 # vue-slot-test
 
-This template should help get you started developing with Vue 3 in Vite.
+:pencil: Vue3 slot おためし
 
-## Recommended IDE Setup
+- Vue.js × Vite
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Description
 
-## Type Support for `.vue` Imports in TS
+- Props で受け取った値を「○○さんのプロフィール」見出しとして表示
+- slot で表示する内容を変更
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+![vue-slot-test](https://user-images.githubusercontent.com/40832190/209796907-ea2976a0-a251-4623-bcc2-5552c57fd9dd.png)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Usage
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- 以下実行後、http://localhost:5173/ へアクセス
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+```bash
+$ git clone https://github.com/kyoruni/vue-slot-test.git
+$ cd vue-slot-test
+$ docker-compose build
+$ docker-compose up -d
 ```
