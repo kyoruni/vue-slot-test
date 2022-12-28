@@ -27,8 +27,8 @@ const families = ["母：恵美子", "父：宗介", "妹：美香"];
     <slot name="scope" :familyInfo="familyInfo">
       <h4>家族構成</h4>
       <ul>
-        <li>人数！！！！！{{ familyInfo.num }}</li>
-        <li>メモ！！！！！{{ familyInfo.memo}}</li>
+        <li>人数：{{ familyInfo.num }}</li>
+        <li>メモ：{{ familyInfo.memo}}</li>
       </ul>
     </slot>
   </section>
